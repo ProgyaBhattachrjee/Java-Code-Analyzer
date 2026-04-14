@@ -1,0 +1,55 @@
+.dryrun-container {
+  margin-top: 25px;
+  padding: 22px;
+  background: white;
+  border-radius: 14px;
+  border: 1px solid #e6eaf0;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.dryrun-container h2 {
+  margin: 0 0 15px;
+  color: #111;
+}
+
+/* steps list */
+.steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* step card */
+.step-card {
+  display: flex;
+  gap: 15px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #f8fafc;
+  border: 1px solid #e6eaf0;
+  transition: all 0.2s;
+}
+
+.step-card:hover {
+  transform: translateX(4px);
+  background: #eef2ff;
+}
+
+/* step number */
+.step-number {
+  font-weight: 600;
+  color: #4f46e5;
+  min-width: 80px;
+}
+
+/* description */
+.step-desc {
+  color: #333;
+  font-family: "JetBrains Mono", monospace;
+}
+
+/* empty state */
+.empty {
+  color: #777;
+  font-size: 14px;
+}

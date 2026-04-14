@@ -1,0 +1,117 @@
+.flowchart-container {
+  width: 100%;
+  height: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f9fafb, #eef2f7);
+  border: 1px solid #dcdfe6;
+}
+
+/* NODE BASE */
+.react-flow__node {
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 10px 14px;
+  border: 1px solid #d0d7de;
+  background: white;
+  color: #222;
+  transition: all 0.2s ease;
+}
+
+/* NODE HOVER */
+.react-flow__node:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* START NODE */
+.react-flow__node[data-type="start"] {
+  background: #e8f5e9;
+  border: 2px solid #4caf50;
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+/* END NODE */
+.react-flow__node[data-type="end"] {
+  background: #ffebee;
+  border: 2px solid #f44336;
+  color: #c62828;
+  font-weight: 600;
+}
+
+/* DECISION NODE */
+.react-flow__node[data-type="decision"] {
+  background: #fff3e0;
+  border: 2px solid #ff9800;
+  color: #ef6c00;
+  transform: rotate(45deg);
+}
+
+/* FIX TEXT ROTATION */
+.react-flow__node[data-type="decision"] > div {
+  transform: rotate(-45deg);
+}
+
+/* PROCESS NODE */
+.react-flow__node[data-type="process"] {
+  background: #e3f2fd;
+  border: 2px solid #2196f3;
+  color: #0d47a1;
+}
+
+/* HANDLES */
+.react-flow__handle {
+  width: 8px !important;
+  height: 8px !important;
+  background: #555 !important;
+  border: 2px solid white !important;
+}
+
+/* EDGES */
+.react-flow__edge-path {
+  stroke: #555;
+  stroke-width: 2;
+  transition: all 0.2s;
+}
+
+/* EDGE HOVER */
+.react-flow__edge:hover .react-flow__edge-path {
+  stroke: #1976d2;
+  stroke-width: 3;
+}
+
+/* LOOP EDGE */
+.react-flow__edge.animated .react-flow__edge-path {
+  stroke: #ff9800;
+  stroke-dasharray: 5;
+}
+
+/* EDGE LABEL */
+.react-flow__edge-textbg {
+  fill: #fff;
+  stroke: #ddd;
+  stroke-width: 1;
+}
+
+.react-flow__edge-text {
+  font-size: 12px;
+  font-weight: 600;
+  fill: #333;
+}
+
+/* CONTROLS */
+.react-flow__controls {
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* MINIMAP */
+.react-flow__minimap {
+  border-radius: 10px;
+  background: white;
+  border: 1px solid #ddd;
+}
